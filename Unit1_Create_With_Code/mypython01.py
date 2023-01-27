@@ -6,7 +6,7 @@ line comment
 """
 # Input
 name = input("What is your name? ")
-age = input("What is your name? ")
+age = int(input("What is your age? "))
 
 # processing
 # python can calculate numbers
@@ -14,7 +14,7 @@ age = input("What is your name? ")
 age = 20 + age
 
 # Output
-print ("Hi, ", +name, " your age in 20 years will be ", age)
+print ("Hi, " +name+" your age in 20 years will be "+ str(age))
 
 
 
