@@ -5,4 +5,7 @@ title = input("Please input the title of your book. ")
 
 #store length of 'title' as 'titleLength'
 
-titleLength = 
+titleNoSpace = title.replace(" ", "")
+titleLength = len(titleNoSpace)
+
+print("There are " + str(titleLength) + " letters in " + title)
