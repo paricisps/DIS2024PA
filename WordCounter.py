@@ -1,4 +1,3 @@
-
 runProgram = True
 
 print("Hello and welcome to the title word counter checker.")
@@ -8,7 +7,7 @@ while runProgram == True:
     if startProgram == "yes":
         title = input("Please input your book title. ")
         titleLength = len(title.split())
-        print(f"Your book title contains {titleLength} words")
+        print(f"The title of your book, {title} contains {titleLength} words")
         if titleLength <= 2:
             print("Your book has good marketability! Congratulations! ")
         else:
