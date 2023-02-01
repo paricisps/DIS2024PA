@@ -28,6 +28,7 @@ while runProgram == True: # beginning of loop
         print(50 * '~')
         print("The books you checked were: ")
 
+
         for i in range(0, len(titleHistory)): # runs loop for the amount of entries in the titleHistory list
             print(f"{i+1}: {titleHistory[i]}, containing {lengthHistory[i]} words") # prints the title and its associated word length
 
