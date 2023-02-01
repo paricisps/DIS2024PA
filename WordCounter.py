@@ -1,14 +1,15 @@
-runProgram = True #lets the loop run
+runProgram = True  # lets the loop run
 
-print("Hello and welcome to the title word counter checker.") # greets the user
-titleHistory = [] # creates list for books
-lengthHistory = [] # creates list for title Length
-
-while runProgram == True: # beginning of loop
+print("Hello and welcome to the title word counter checker.")  # greets the user
+titleHistory = []  # creates list for books
+lengthHistory = []  # creates list for title Length
+# while True:
+# while runProgram:
+while runProgram == True:  # beginning of loop
     startProgram = input("Would you like to check if the word count of your book title is good for marketing? (yes/no) ").lower() # asks the user if they want to start
 
-    if startProgram == "yes": # runs if user wants to start
-        title = input("Please input your book title. ") #lets user input title
+    if startProgram == "yes" or startProgram == "y":  # runs if user wants to start
+        title = input("Please input your book title. ")  # lets user input title
 
         titleLength = len(title.split()) # checks the number of words in the title
 
