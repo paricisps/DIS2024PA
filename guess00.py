@@ -14,7 +14,7 @@ slow = 0
 long = 0
 
 while unsolved:  # runs loop while number is unsolved
-    guess = int(input("Please guess a number between 0 and 100."))  # takes the users guess
+    guess = int(input("Please guess a number between 0 and 100. "))  # takes the users guess
     guessNo += 1  # adds +1 to the guess counter
     if guess > num:  # runs is guess is bigger than the number
         print(f"The number is smaller than {guess}")
@@ -45,11 +45,11 @@ while unsolved:  # runs loop while number is unsolved
                     long += 1
 
             print("Thank you for playing!")  # thanks user
+            print(f"{'~'*15} STATISTICS {'~'*15} ")
+            print(f"You solved {totalSolved} number/s.")
 
-            print(f"You solved {totalSolved} numbers.")
-
-            print(f"{(impossible/ totalSolved)*100}% were solved in one guess.")
-            print(f"{(quick / totalSolved) * 100}% were solved quickly.")
-            print(f"{(average / totalSolved) * 100}% were solved at an average speed.")
-            print(f"{(slow / totalSolved) * 100}% were solved slowly.")
-            print(f"{(long / totalSolved) * 100}% took you way too long to solve.")
+            print(f"{round(((impossible / totalSolved)*100),2)}% were solved in one guess.")
+            print(f"{round(((quick / totalSolved) * 100), 2)}% were solved quickly.")
+            print(f"{round(((average / totalSolved) * 100), 2)}% were solved at an average speed.")
+            print(f"{round(((slow / totalSolved) * 100), 2)}% were solved slowly.")
+            print(f"{round(((long / totalSolved) * 100), 2)}% took you way too long to solve.")
