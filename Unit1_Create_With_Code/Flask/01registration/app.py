@@ -8,9 +8,10 @@ def hello_form():
     return '<h1>Hello, Form! </h1>'
 @app.route('/registration', methods=['GET', 'POST'])
 def RegisterUser():
+
     form = Registration()
     if request.method == 'POST':
-        if form.validate() == FALSE:
+        if form.validate() == 'FALSE':
             return render_template('registration.html', form=form)
         else:
             return render_template('success.html')
