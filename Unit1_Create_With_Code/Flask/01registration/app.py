@@ -6,6 +6,7 @@ app.config['SECRET_KEY'] = 'a very long string'
 @app.route('/')
 def hello_form():
     return '<h1>Hello, Form! </h1>'
+
 @app.route('/registration', methods=['GET', 'POST'])
 def RegisterUser():
 
